@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		C8F0887E2EC5D02200554F73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C8F088602EC5D02100554F73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8F088672EC5D02100554F73;
-			remoteInfo = "KFH-task";
-		};
-		C8F088882EC5D02200554F73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C8F088602EC5D02100554F73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8F088672EC5D02100554F73;
-			remoteInfo = "KFH-task";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		C8F088682EC5D02100554F73 /* KFH-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KFH-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8F0887D2EC5D02200554F73 /* KFH-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KFH-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8F088872EC5D02200554F73 /* KFH-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KFH-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -39,20 +20,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		C8F088652EC5D02100554F73 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8F0887A2EC5D02200554F73 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8F088842EC5D02200554F73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				C8F088682EC5D02100554F73 /* KFH-task.app */,
-				C8F0887D2EC5D02200554F73 /* KFH-taskTests.xctest */,
-				C8F088872EC5D02200554F73 /* KFH-taskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,46 +70,6 @@
 			productReference = C8F088682EC5D02100554F73 /* KFH-task.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C8F0887C2EC5D02200554F73 /* KFH-taskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C8F088942EC5D02200554F73 /* Build configuration list for PBXNativeTarget "KFH-taskTests" */;
-			buildPhases = (
-				C8F088792EC5D02200554F73 /* Sources */,
-				C8F0887A2EC5D02200554F73 /* Frameworks */,
-				C8F0887B2EC5D02200554F73 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C8F0887F2EC5D02200554F73 /* PBXTargetDependency */,
-			);
-			name = "KFH-taskTests";
-			packageProductDependencies = (
-			);
-			productName = "KFH-taskTests";
-			productReference = C8F0887D2EC5D02200554F73 /* KFH-taskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C8F088862EC5D02200554F73 /* KFH-taskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C8F088972EC5D02200554F73 /* Build configuration list for PBXNativeTarget "KFH-taskUITests" */;
-			buildPhases = (
-				C8F088832EC5D02200554F73 /* Sources */,
-				C8F088842EC5D02200554F73 /* Frameworks */,
-				C8F088852EC5D02200554F73 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C8F088892EC5D02200554F73 /* PBXTargetDependency */,
-			);
-			name = "KFH-taskUITests";
-			packageProductDependencies = (
-			);
-			productName = "KFH-taskUITests";
-			productReference = C8F088872EC5D02200554F73 /* KFH-taskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,14 +82,6 @@
 				TargetAttributes = {
 					C8F088672EC5D02100554F73 = {
 						CreatedOnToolsVersion = 16.0;
-					};
-					C8F0887C2EC5D02200554F73 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = C8F088672EC5D02100554F73;
-					};
-					C8F088862EC5D02200554F73 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = C8F088672EC5D02100554F73;
 					};
 				};
 			};
@@ -185,28 +102,12 @@
 			projectRoot = "";
 			targets = (
 				C8F088672EC5D02100554F73 /* KFH-task */,
-				C8F0887C2EC5D02200554F73 /* KFH-taskTests */,
-				C8F088862EC5D02200554F73 /* KFH-taskUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C8F088662EC5D02100554F73 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8F0887B2EC5D02200554F73 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8F088852EC5D02200554F73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,34 +124,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8F088792EC5D02200554F73 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8F088832EC5D02200554F73 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C8F0887F2EC5D02200554F73 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C8F088672EC5D02100554F73 /* KFH-task */;
-			targetProxy = C8F0887E2EC5D02200554F73 /* PBXContainerItemProxy */;
-		};
-		C8F088892EC5D02200554F73 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C8F088672EC5D02100554F73 /* KFH-task */;
-			targetProxy = C8F088882EC5D02200554F73 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C8F0888F2EC5D02200554F73 /* Debug */ = {
@@ -430,78 +304,6 @@
 			};
 			name = Release;
 		};
-		C8F088952EC5D02200554F73 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4V7SUXT3PZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KFH-Task.KFH-taskTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFH-task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KFH-task";
-			};
-			name = Debug;
-		};
-		C8F088962EC5D02200554F73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4V7SUXT3PZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KFH-Task.KFH-taskTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFH-task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KFH-task";
-			};
-			name = Release;
-		};
-		C8F088982EC5D02200554F73 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4V7SUXT3PZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KFH-Task.KFH-taskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "KFH-task";
-			};
-			name = Debug;
-		};
-		C8F088992EC5D02200554F73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4V7SUXT3PZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KFH-Task.KFH-taskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "KFH-task";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -519,24 +321,6 @@
 			buildConfigurations = (
 				C8F088922EC5D02200554F73 /* Debug */,
 				C8F088932EC5D02200554F73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C8F088942EC5D02200554F73 /* Build configuration list for PBXNativeTarget "KFH-taskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C8F088952EC5D02200554F73 /* Debug */,
-				C8F088962EC5D02200554F73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C8F088972EC5D02200554F73 /* Build configuration list for PBXNativeTarget "KFH-taskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C8F088982EC5D02200554F73 /* Debug */,
-				C8F088992EC5D02200554F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

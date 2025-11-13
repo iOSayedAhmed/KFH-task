@@ -3,7 +3,7 @@
 //  KFH-task
 //
 //  Created by iOSAYed on 13/11/2025.
-//  KFH-task
+//
 
 import SwiftUI
 
@@ -112,6 +112,3 @@ struct FeatureRow: View {
     }
 }
 
-#Preview {
-    TutorialOverlayView(isVisible: .constant(true))
-}
