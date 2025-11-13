@@ -3,84 +3,60 @@
 //  KFH-task
 //
 //  Created by iOSAYed on 13/11/2025.
-//
+//  KFH-task
 
 import SwiftUI
 import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject private var diContainer: DIContainer
 
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    // Tutorial and PDF states
+    @State private var showTutorial = false
+    @State private var showPDF = false
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        ZStack {
+            // Main content with repositories
+            GitHubRepositoriesView()
+            // Tutorial overlay
+            if showTutorial {
+                TutorialOverlayView(isVisible: $showTutorial)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+        }
+        .sheet(isPresented: $showPDF) {
+            PDFViewerView(pdfName: "Elsayed-Ahmed-iOS-CV")
+        }
+        .onAppear {
+            handleAppLaunch()
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+    private func handleAppLaunch() {
+        // Increment launch count
+        UserDefaults.standard.incrementLaunchCount()
 
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        // Show tutorial if this is the first launch
+        if UserDefaults.standard.shouldShowTutorial() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                    showTutorial = true
+                }
             }
         }
-    }
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+        // Log app configuration
+        if AppConfiguration.App.isDebugMode {
+            print("App launched - Count: \(UserDefaults.standard.appLaunchCount)")
+            print("Configuration: \(ConfigurationManager.shared.appName)")
+            print("API Base URL: \(ConfigurationManager.shared.apiBaseURL)")
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    ContentView()
+        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        .environmentObject(DIContainer.shared)
 }
