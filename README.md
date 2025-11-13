@@ -49,6 +49,13 @@ The app follows Clean Architecture principles with clear separation of concerns:
     ├── RepositoryList/      # Main repository browser
     └── RepositoryDetails/   # Repository detail views
 ```
+### 🌇 Screeshots
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-13 at 12 25 04" src="https://github.com/user-attachments/assets/d8da146f-5885-468f-80b6-507e6cf7154e" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-13 at 13 24 51" src="https://github.com/user-attachments/assets/d94a76a2-b442-4a0c-9c0d-c76b7504fd4f" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-13 at 13 25 35" src="https://github.com/user-attachments/assets/73e5758b-ec31-46cc-a68b-662c342872c8" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-13 at 13 25 31" src="https://github.com/user-attachments/assets/9251d70f-ea6c-45e6-969c-7f4c252669f4" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-13 at 13 25 12" src="https://github.com/user-attachments/assets/917e728d-912f-44c9-ba18-82528976195f" />
+
 
 ### 🔧 Key Components
 
@@ -147,3 +154,6 @@ The architecture supports easy testing with:
 ## Author
 
 **Elsayed Ahmed** - iOS Developer
+
+
+
