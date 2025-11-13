@@ -124,12 +124,6 @@ The app integrates with GitHub's public API:
 - Fork status indicator
 - Direct link to GitHub repository
 
-### Developer CV
-- Accessible via info button with tooltip
-- Full-screen PDF viewer
-- Share functionality for CV
-- Professional presentation
-
 ### Tutorial System
 - First-launch tutorial overlay
 - Launch count tracking
@@ -155,9 +149,3 @@ The architecture supports easy testing with:
 ## Author
 
 **Elsayed Ahmed** - iOS Developer
-
-Access the developer's CV through the info button in the app.
-
-## License
-
-This project is created as part of a technical assessment for KFH.
