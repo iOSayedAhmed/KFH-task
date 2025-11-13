@@ -35,16 +35,6 @@
 			path = "KFH-task";
 			sourceTree = "<group>";
 		};
-		C8F088802EC5D02200554F73 /* KFH-taskTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "KFH-taskTests";
-			sourceTree = "<group>";
-		};
-		C8F0888A2EC5D02200554F73 /* KFH-taskUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "KFH-taskUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				C8F0886A2EC5D02100554F73 /* KFH-task */,
-				C8F088802EC5D02200554F73 /* KFH-taskTests */,
-				C8F0888A2EC5D02200554F73 /* KFH-taskUITests */,
 				C8F088692EC5D02100554F73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				C8F0887F2EC5D02200554F73 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				C8F088802EC5D02200554F73 /* KFH-taskTests */,
-			);
 			name = "KFH-taskTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				C8F088892EC5D02200554F73 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C8F0888A2EC5D02200554F73 /* KFH-taskUITests */,
 			);
 			name = "KFH-taskUITests";
 			packageProductDependencies = (
@@ -195,6 +177,8 @@
 			);
 			mainGroup = C8F0885F2EC5D02100554F73;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C8F088692EC5D02100554F73 /* Products */;
 			projectDirPath = "";
@@ -395,7 +379,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KFH-task/Preview Content\"";
 				DEVELOPMENT_TEAM = 4V7SUXT3PZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -404,6 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +408,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KFH-task/Preview Content\"";
 				DEVELOPMENT_TEAM = 4V7SUXT3PZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -433,6 +416,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

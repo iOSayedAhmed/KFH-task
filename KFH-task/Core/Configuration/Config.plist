@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>API</key>
+    <dict>
+        <key>BaseURL</key>
+        <string>https://api.github.com/</string>
+        <key>Timeout</key>
+        <real>30.0</real>
+        <key>Endpoints</key>
+        <dict>
+            <key>Repositories</key>
+            <string>/repositories</string>
+        </dict>
+    </dict>
+    <key>Cache</key>
+    <dict>
+        <key>MaxAge</key>
+        <real>300</real>
+        <key>MaxSize</key>
+        <integer>52428800</integer>
+    </dict>
+    <key>App</key>
+    <dict>
+        <key>Name</key>
+        <string>KFH Task</string>
+        <key>MinSearchCharacters</key>
+        <integer>2</integer>
+    </dict>
+</dict>
+</plist>
