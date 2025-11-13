@@ -21,7 +21,9 @@ struct GitHubRepositoriesView: View {
         NavigationView {
             List {
                 ForEach(viewModel.repos) { repository in
-                    RepositoryRowView(repository: repository)
+                    NavigationLink(destination: RepoDetailsView(repository: repository.repository)) {
+                        RepositoryRowView(repository: repository)
+                    }
                 }
             }
             .navigationTitle(viewModel.title)
