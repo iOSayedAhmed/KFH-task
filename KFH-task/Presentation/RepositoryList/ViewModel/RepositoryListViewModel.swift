@@ -67,7 +67,8 @@ extension RepositoryListViewModel {
                                       title: $0.name,
                                       ownerName: $0.owner.login,
                                       description: $0.description,
-                                      ownerAvatarURL: $0.owner.avatarURL)
+                                      ownerAvatarURL: $0.owner.avatarURL,
+                                      repository: $0)
         }
     }
 }

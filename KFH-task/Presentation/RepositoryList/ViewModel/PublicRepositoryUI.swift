@@ -16,6 +16,7 @@ class PublicRepositoryUI: Identifiable, ObservableObject {
     let ownerName: String
     let description: String?
     let ownerAvatar: ImageItem
+    let repository: RepositoryModel
 
     func fetchImage() {
         ImageCache.public.load(url: ownerAvatar.url as NSURL, item: ownerAvatar) { fetchedItem, image in
@@ -32,11 +33,12 @@ class PublicRepositoryUI: Identifiable, ObservableObject {
         self.ownerAvatar.image = UIImage(systemName: "photo")!
     }
 
-    init(id: Int, title: String, ownerName: String, description: String?, ownerAvatarURL: String) {
+    init(id: Int, title: String, ownerName: String, description: String?, ownerAvatarURL: String, repository: RepositoryModel) {
         self.id = id
         self.title = title
         self.ownerName = ownerName
         self.description = description
+        self.repository = repository
         self.ownerAvatar = ImageItem(
             image: UIImage(systemName: "photo")!,
             url: URL(string: ownerAvatarURL)!
